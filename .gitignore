@@ -1,5 +1,9 @@
 # dependencies
 node_modules/
+dist
+/dist
+dist/
+/dist/
 
 # IDE
 /.idea

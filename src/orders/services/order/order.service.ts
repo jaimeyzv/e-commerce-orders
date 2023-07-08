@@ -16,7 +16,5 @@ export class OrderService {
       customerId: order.customerId,
       total: order.total,
     });
-
-    console.log(newOrderCreated);
   }
 }
