@@ -1,13 +1,13 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity('Orders')
+@Entity({ name: 'Orders' })
 export class OrderEntity {
-  @PrimaryGeneratedColumn()
-  id: string;
+  @PrimaryGeneratedColumn('uuid')
+  orderId: string;
 
   @Column()
   customerId: string;
 
-  @Column()
+  @Column({ nullable: false, type: 'decimal' })
   total: number;
 }
