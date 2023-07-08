@@ -17,4 +17,11 @@ export class OrderService {
       total: order.total,
     });
   }
+
+  async getOrderById(id: string) {
+    const orderFound = await this.orderRepository.findOne({
+      where: { orderId: id },
+    });
+    return orderFound;
+  }
 }
