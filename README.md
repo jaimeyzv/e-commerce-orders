@@ -7,6 +7,7 @@ The other microservices are:
 # technology stack
 In this project are user few libraties in order to create restfull services access database:
 * Nest JS
+* Typescript
 * TypeORM
 * Postgres
 * Class-Validator
